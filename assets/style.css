@@ -1,0 +1,26 @@
+:root{--bg:#f6f8fb;--card:#fff;--fg:#14202e;--mut:#5b6b7c;--acc:#0a6cc4;--line:#dfe6ee;--warn:#fff4e0;--warnb:#e0a030}
+@media(prefers-color-scheme:dark){:root{--bg:#0d141c;--card:#16202b;--fg:#e8eef5;--mut:#9fb0c1;--acc:#5db0ff;--line:#26333f;--warn:#2b2414;--warnb:#a87c24}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+header,main,footer{max-width:760px;margin:0 auto;padding:0 20px}
+header{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding-top:22px;padding-bottom:10px}
+header .brand{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--fg);text-decoration:none}
+header img{width:36px;height:36px;border-radius:9px}
+nav.pages{display:flex;gap:16px;margin-left:auto;flex-wrap:wrap}
+nav.pages a{color:var(--mut);text-decoration:none;font-size:15px}nav.pages a[aria-current]{color:var(--acc);font-weight:600}
+.lang{display:flex;gap:6px;width:100%}
+.lang button{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:999px;padding:4px 12px;font:inherit;font-size:14px;cursor:pointer}
+.lang button[aria-pressed=true]{background:var(--acc);border-color:var(--acc);color:#fff}
+.hero{display:flex;gap:20px;align-items:center;margin:26px 0 8px;flex-wrap:wrap}
+.hero img{width:96px;height:96px;border-radius:22px;box-shadow:0 4px 16px rgba(0,0,0,.18)}
+h1{font-size:2rem;line-height:1.2;margin:0}h2{font-size:1.25rem;margin:2rem 0 .4rem}
+.tag{color:var(--mut);margin:.25rem 0 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 14px;margin:16px 0}
+.warn{background:var(--warn);border:1px solid var(--warnb);border-radius:14px;padding:12px 20px;margin:22px 0}
+.warn h2{margin-top:.2rem}
+ul{padding-left:1.2rem}li{margin:.4rem 0}
+a{color:var(--acc)}dt{font-weight:600;margin-top:1rem}dd{margin:.1rem 0 0}
+.mail{font-size:1.1rem;font-weight:600}
+footer{padding-top:24px;padding-bottom:40px;color:var(--mut);font-size:14px}
+@media(max-width:520px){nav.pages{margin-left:0;width:100%;gap:14px}header .brand{width:100%}}
+[hidden]{display:none!important}
