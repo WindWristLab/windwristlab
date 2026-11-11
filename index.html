@@ -3,54 +3,54 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>windwristlab</title>
-<meta name="description" content="windwristlab — experimental wind estimator for Apple Watch.">
+<title>WristWindLab</title>
+<meta name="description" content="WristWindLab — experimental wind estimator for Apple Watch.">
 <link rel="icon" href="assets/icon-180.png">
 <link rel="apple-touch-icon" href="assets/icon-180.png">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 <header>
-<a class="brand" href="index.html"><img src="assets/icon-180.png" alt="" width="36" height="36">windwristlab</a>
+<a class="brand" href="index.html"><img src="assets/icon-180.png" alt="" width="36" height="36">WristWindLab</a>
 <nav class="pages" aria-label="Pages"><a href="index.html" aria-current=page><span data-l="en">Home</span></a><a href="index.html" aria-current=page><span data-l="fr">Accueil</span></a><a href="index.html" aria-current=page><span data-l="es">Inicio</span></a><a href="index.html" aria-current=page><span data-l="pt">Início</span></a><a href="privacy.html"><span data-l="en">Privacy</span></a><a href="privacy.html"><span data-l="fr">Confidentialité</span></a><a href="privacy.html"><span data-l="es">Privacidad</span></a><a href="privacy.html"><span data-l="pt">Privacidade</span></a><a href="support.html"><span data-l="en">Support</span></a><a href="support.html"><span data-l="fr">Assistance</span></a><a href="support.html"><span data-l="es">Soporte</span></a><a href="support.html"><span data-l="pt">Suporte</span></a></nav>
 <div class="lang" role="group" aria-label="Language"><button type="button" data-set="en" aria-pressed="false">EN</button><button type="button" data-set="fr" aria-pressed="false">FR</button><button type="button" data-set="es" aria-pressed="false">ES</button><button type="button" data-set="pt" aria-pressed="false">PT</button></div>
 </header>
 <main>
 <section lang="en" data-l="en">
-<div class="hero"><img src="assets/icon-512.png" alt="windwristlab" width="96" height="96"><div><h1>windwristlab</h1><p class="tag">Experimental wind estimator for Apple Watch</p></div></div>
-<p>windwristlab estimates wind speed for a person standing still by fusing the sensors of the Apple Watch.</p>
+<div class="hero"><img src="assets/icon-512.png" alt="WristWindLab" width="96" height="96"><div><h1>WristWindLab</h1><p class="tag">Experimental wind estimator for Apple Watch</p></div></div>
+<p>WristWindLab estimates wind speed for a person standing still by fusing the sensors of the Apple Watch.</p>
 <p><em>App Store: coming soon.</em></p>
 <h2>How it works</h2><ul><li>Barometer: reads the tiny pressure fluctuations that wind creates around the watch.</li><li>Microphone: analyses low-frequency aerodynamic noise (30–150 Hz). Audio is processed on the watch and is neither recorded nor sent anywhere.</li><li>Motion sensors: a Kalman filter uses the vertical acceleration to cancel the pressure change caused by your own wrist movement.</li><li>GNSS: checks that you are really stationary (ground speed).</li><li>Wind direction (experimental): turn slowly on the spot and the app looks for the heading with the strongest signal.</li></ul>
 <h2>Calibrate it against a real anemometer</h2><p>Out of the box the app gives a relative estimate. Record the audio noise floor in calm air, then enter a few readings from a real anemometer with the Digital Crown. The app fits a power-law calibration for your watch and the way you wear it.</p>
 <h2>Air temperature and units</h2><p>Air density depends on temperature. The app can fetch the air temperature for your location from Apple Weather, or you can type it in manually. Units are SI (m/s, km/h, °C, Pa) or US (mph, kn, °F, inHg), chosen from your watch region and changeable in Settings. Available in English, French, Spanish and Portuguese.</p>
-<div class="warn"><h2>Important</h2><p>windwristlab is a research prototype, not a calibrated anemometer. No accuracy is guaranteed until you have compared it with a reference instrument. Do not use it for safety-critical decisions (work at height, lifting, sailing, aviation, severe weather).</p></div>
+<div class="warn"><h2>Important</h2><p>WristWindLab is a research prototype, not a calibrated anemometer. No accuracy is guaranteed until you have compared it with a reference instrument. Do not use it for safety-critical decisions (work at height, lifting, sailing, aviation, severe weather).</p></div>
 </section>
 <section lang="fr" data-l="fr">
-<div class="hero"><img src="assets/icon-512.png" alt="windwristlab" width="96" height="96"><div><h1>windwristlab</h1><p class="tag">Estimateur de vent expérimental pour Apple Watch</p></div></div>
-<p>windwristlab estime la vitesse du vent pour une personne immobile en fusionnant les capteurs de l&#x27;Apple Watch.</p>
+<div class="hero"><img src="assets/icon-512.png" alt="WristWindLab" width="96" height="96"><div><h1>WristWindLab</h1><p class="tag">Estimateur de vent expérimental pour Apple Watch</p></div></div>
+<p>WristWindLab estime la vitesse du vent pour une personne immobile en fusionnant les capteurs de l&#x27;Apple Watch.</p>
 <p><em>App Store : bientôt disponible.</em></p>
 <h2>Fonctionnement</h2><ul><li>Baromètre : lit les infimes fluctuations de pression que le vent crée autour de la montre.</li><li>Microphone : analyse le bruit aérodynamique basse fréquence (30–150 Hz). Le son est traité sur la montre ; il n&#x27;est ni enregistré ni transmis.</li><li>Capteurs de mouvement : un filtre de Kalman utilise l&#x27;accélération verticale pour annuler la variation de pression due aux mouvements de votre poignet.</li><li>GNSS : vérifie que vous êtes bien immobile (vitesse sol).</li><li>Direction du vent (expérimental) : tournez lentement sur place ; l&#x27;app cherche le cap où le signal est le plus fort.</li></ul>
 <h2>Étalonnez-la avec un vrai anémomètre</h2><p>Sans étalonnage, l&#x27;app fournit une estimation relative. Mesurez le plancher de bruit en air calme, puis saisissez quelques valeurs lues sur un vrai anémomètre avec la Digital Crown. L&#x27;app ajuste une loi de puissance propre à votre montre et à votre façon de la porter.</p>
 <h2>Température de l&#x27;air et unités</h2><p>La densité de l&#x27;air dépend de la température. L&#x27;app peut récupérer la température de l&#x27;air à votre position via Apple Weather, ou vous pouvez la saisir manuellement. Unités SI (m/s, km/h, °C, Pa) ou américaines (mph, kn, °F, inHg), choisies selon la région de la montre et modifiables dans Réglages. Disponible en anglais, français, espagnol et portugais.</p>
-<div class="warn"><h2>Important</h2><p>windwristlab est un prototype de recherche, pas un anémomètre étalonné. Aucune exactitude n&#x27;est garantie tant que vous ne l&#x27;avez pas comparé à un instrument de référence. Ne l&#x27;utilisez pas pour des décisions de sécurité (travail en hauteur, levage, navigation, aviation, météo violente).</p></div>
+<div class="warn"><h2>Important</h2><p>WristWindLab est un prototype de recherche, pas un anémomètre étalonné. Aucune exactitude n&#x27;est garantie tant que vous ne l&#x27;avez pas comparé à un instrument de référence. Ne l&#x27;utilisez pas pour des décisions de sécurité (travail en hauteur, levage, navigation, aviation, météo violente).</p></div>
 </section>
 <section lang="es" data-l="es">
-<div class="hero"><img src="assets/icon-512.png" alt="windwristlab" width="96" height="96"><div><h1>windwristlab</h1><p class="tag">Estimador de viento experimental para Apple Watch</p></div></div>
-<p>windwristlab estima la velocidad del viento para una persona en reposo fusionando los sensores del Apple Watch.</p>
+<div class="hero"><img src="assets/icon-512.png" alt="WristWindLab" width="96" height="96"><div><h1>WristWindLab</h1><p class="tag">Estimador de viento experimental para Apple Watch</p></div></div>
+<p>WristWindLab estima la velocidad del viento para una persona en reposo fusionando los sensores del Apple Watch.</p>
 <p><em>App Store: próximamente.</em></p>
 <h2>Cómo funciona</h2><ul><li>Barómetro: lee las diminutas fluctuaciones de presión que el viento crea alrededor del reloj.</li><li>Micrófono: analiza el ruido aerodinámico de baja frecuencia (30–150 Hz). El audio se procesa en el reloj y no se graba ni se envía a ninguna parte.</li><li>Sensores de movimiento: un filtro de Kalman usa la aceleración vertical para anular la variación de presión causada por los movimientos de tu muñeca.</li><li>GNSS: comprueba que estás realmente quieto (velocidad sobre el suelo).</li><li>Dirección del viento (experimental): gira despacio sobre ti mismo y la app busca el rumbo con la señal más fuerte.</li></ul>
 <h2>Calíbrala con un anemómetro real</h2><p>Sin calibrar, la app ofrece una estimación relativa. Mide el piso de ruido con aire en calma y luego introduce algunas lecturas de un anemómetro real con la Digital Crown. La app ajusta una ley de potencia propia de tu reloj y de cómo lo llevas.</p>
 <h2>Temperatura del aire y unidades</h2><p>La densidad del aire depende de la temperatura. La app puede obtener la temperatura del aire en tu ubicación mediante Apple Weather, o puedes escribirla a mano. Unidades SI (m/s, km/h, °C, Pa) o estadounidenses (mph, kn, °F, inHg), elegidas según la región del reloj y modificables en Ajustes. Disponible en inglés, francés, español y portugués.</p>
-<div class="warn"><h2>Importante</h2><p>windwristlab es un prototipo de investigación, no un anemómetro calibrado. No se garantiza ninguna exactitud hasta que lo compares con un instrumento de referencia. No lo uses para decisiones críticas de seguridad (trabajo en altura, izado, navegación, aviación, fenómenos meteorológicos severos).</p></div>
+<div class="warn"><h2>Importante</h2><p>WristWindLab es un prototipo de investigación, no un anemómetro calibrado. No se garantiza ninguna exactitud hasta que lo compares con un instrumento de referencia. No lo uses para decisiones críticas de seguridad (trabajo en altura, izado, navegación, aviación, fenómenos meteorológicos severos).</p></div>
 </section>
 <section lang="pt" data-l="pt">
-<div class="hero"><img src="assets/icon-512.png" alt="windwristlab" width="96" height="96"><div><h1>windwristlab</h1><p class="tag">Estimador de vento experimental para Apple Watch</p></div></div>
-<p>O windwristlab estima a velocidade do vento para uma pessoa parada combinando os sensores do Apple Watch.</p>
+<div class="hero"><img src="assets/icon-512.png" alt="WristWindLab" width="96" height="96"><div><h1>WristWindLab</h1><p class="tag">Estimador de vento experimental para Apple Watch</p></div></div>
+<p>O WristWindLab estima a velocidade do vento para uma pessoa parada combinando os sensores do Apple Watch.</p>
 <p><em>App Store: em breve.</em></p>
 <h2>Como funciona</h2><ul><li>Barômetro: lê as minúsculas flutuações de pressão que o vento cria ao redor do relógio.</li><li>Microfone: analisa o ruído aerodinâmico de baixa frequência (30–150 Hz). O áudio é processado no relógio e não é gravado nem enviado para lugar nenhum.</li><li>Sensores de movimento: um filtro de Kalman usa a aceleração vertical para cancelar a variação de pressão causada pelos movimentos do seu pulso.</li><li>GNSS: confirma que você está realmente parado (velocidade sobre o solo).</li><li>Direção do vento (experimental): gire devagar no lugar e o app procura o rumo com o sinal mais forte.</li></ul>
 <h2>Calibre com um anemômetro real</h2><p>Sem calibração, o app fornece uma estimativa relativa. Meça o piso de ruído com o ar calmo e depois informe algumas leituras de um anemômetro real com a Digital Crown. O app ajusta uma lei de potência própria para o seu relógio e para o jeito como você o usa.</p>
 <h2>Temperatura do ar e unidades</h2><p>A densidade do ar depende da temperatura. O app pode obter a temperatura do ar na sua localização pelo Apple Weather, ou você pode digitá-la manualmente. Unidades SI (m/s, km/h, °C, Pa) ou americanas (mph, kn, °F, inHg), escolhidas pela região do relógio e alteráveis em Ajustes. Disponível em inglês, francês, espanhol e português.</p>
-<div class="warn"><h2>Importante</h2><p>O windwristlab é um protótipo de pesquisa, não um anemômetro calibrado. Nenhuma precisão é garantida até que você o compare com um instrumento de referência. Não o use para decisões críticas de segurança (trabalho em altura, içamento, navegação, aviação, clima severo).</p></div>
+<div class="warn"><h2>Importante</h2><p>O WristWindLab é um protótipo de pesquisa, não um anemômetro calibrado. Nenhuma precisão é garantida até que você o compare com um instrumento de referência. Não o use para decisões críticas de segurança (trabalho em altura, içamento, navegação, aviação, clima severo).</p></div>
 </section>
 </main>
 <footer><p data-l="en">Weather data is provided by Apple Weather. <a href="https://developer.apple.com/weatherkit/data-source-attribution/" rel="noopener">Other data sources</a></p><p data-l="fr">Les données météo sont fournies par Apple Weather. <a href="https://developer.apple.com/weatherkit/data-source-attribution/" rel="noopener">Autres sources de données</a></p><p data-l="es">Los datos meteorológicos los proporciona Apple Weather. <a href="https://developer.apple.com/weatherkit/data-source-attribution/" rel="noopener">Otras fuentes de datos</a></p><p data-l="pt">Os dados meteorológicos são fornecidos pelo Apple Weather. <a href="https://developer.apple.com/weatherkit/data-source-attribution/" rel="noopener">Outras fontes de dados</a></p></footer>
